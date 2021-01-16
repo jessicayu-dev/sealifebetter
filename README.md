@@ -2,9 +2,9 @@
 Hello - This is our project Sea Life Better a Mental Health Tracking & reccomendation app Targeted at Seafarers and other isolated careers. 
 
 Our Crew is made up of : 
-Jose Garcia  - UC - Chemical Engineering
-Sidharth Kumar - CSU Maritime Academy - Mechanical Engineering 
-William Wang - UC -
+Jose Garcia  - UC Riverside - Chemical Engineering
+Sidharth Kumar - CSU Maritime Academy - Mechanical Engineering
+William Wang - UC Davis - Computer Science 
 Jessica Yu - UC Berkeley - Computer Science
 
 
