@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name = "whymoodtrack">Tracking your mood can help with a  whole host of things when  it comes to your mental health and well being</string>
+    <string name="TitleBitScreen2">Lovely, heres why tracking your mood is important</string>
 </resources>
