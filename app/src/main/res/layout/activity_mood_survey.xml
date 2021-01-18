@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MoodSurvey">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/mood_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How's your mood today?"
+            android:textSize="28sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <RadioGroup
+            android:id="@+id/mood_meter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/mood_question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <RadioButton
+                android:id="@+id/mood_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF2D00"
+                android:onClick="checkedRButton"/>
+
+            <RadioButton
+                android:id="@+id/mood_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF9E00"
+                android:onClick="checkedRButton"/>
+
+            <RadioButton
+                android:id="@+id/mood_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FFF700"
+                android:checked="true"
+                android:onClick="checkedRButton"/>
+
+            <RadioButton
+                android:id="@+id/mood_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#8BFF00"
+                android:onClick="checkedRButton"/>
+
+            <RadioButton
+                android:id="@+id/mood_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#00DF1E"
+                android:onClick="checkedRButton"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/notable_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anything notable?"
+            android:fontFamily="sans-serif-light"
+            android:textSize="28sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/mood_meter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <EditText
+            android:id="@+id/mood_entry"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            android:hint="Let's hear your thoughts..."
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/notable_question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/log_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What kinds of things did you get done today?"
+            android:fontFamily="sans-serif-light"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mood_entry"/>
+
+        <EditText
+            android:id="@+id/mood_log"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:inputType="textMultiLine"
+            android:hint="Tell us what you did today..."
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/log_question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/mood_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit..."
+            android:fontFamily="sans-serif-light"
+            app:layout_constraintTop_toBottomOf="@id/mood_log"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

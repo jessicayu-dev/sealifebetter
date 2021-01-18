@@ -9,16 +9,16 @@ public class Mood {
     @PrimaryKey(autoGenerate = true)
     private int id;
 
-    private int mood;
+    private final String moodValue;
 
-    private String entry;
+    private final String entry;
 
-    private String diary;
+    private final String log;
 
-    public Mood(int mood, String entry, String diary) {
-        this.mood = mood;
+    public Mood(String moodValue, String entry, String log) {
+        this.moodValue = moodValue;
         this.entry = entry;
-        this.diary = diary;
+        this.log = log;
     }
 
     public void setId(int id) {
@@ -29,15 +29,15 @@ public class Mood {
         return id;
     }
 
-    public int getMood() {
-        return mood;
+    public String getMoodValue() {
+        return moodValue;
     }
 
     public String getEntry() {
         return entry;
     }
 
-    public String getDiary() {
-        return diary;
+    public String getLog() {
+        return log;
     }
 }

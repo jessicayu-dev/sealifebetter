@@ -19,21 +19,21 @@ public abstract class MoodDatabase extends RoomDatabase {
     public static synchronized MoodDatabase getInstance(Context context) {
         if(instance == null) {
             instance = Room.databaseBuilder(context.getApplicationContext(),
-                    MoodDatabase.class, "mood_database").fallbackToDestructiveMigration().addCallback(roomCallback).build();
+                    MoodDatabase.class, "mood_database").fallbackToDestructiveMigration().build();
         }
 
         return instance;
     }
 
-    private static RoomDatabase.Callback roomCallback = new RoomDatabase.Callback() {
+/*    private static RoomDatabase.Callback roomCallback = new RoomDatabase.Callback() {
         @Override
         public void onCreate(@NonNull SupportSQLiteDatabase db) {
             super.onCreate(db);
             new PopulateDBAsyncTask(instance).execute();
         }
-    };
+    };*/
 
-    private static class PopulateDBAsyncTask extends AsyncTask<Void, Void, Void> {
+/*    private static class PopulateDBAsyncTask extends AsyncTask<Void, Void, Void> {
         private MoodDao moodDao;
 
         private PopulateDBAsyncTask(MoodDatabase db) {
@@ -46,5 +46,5 @@ public abstract class MoodDatabase extends RoomDatabase {
             moodDao.insert(new Mood(1, "Doing bad.", "I didn't go anywhere today."));
             return null;
         }
-    }
+    }*/
 }

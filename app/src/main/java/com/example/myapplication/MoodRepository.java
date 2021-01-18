@@ -13,6 +13,7 @@ public class MoodRepository {
 
     public MoodRepository(Application application) {
         MoodDatabase database = MoodDatabase.getInstance(application);
+        moodDao = database.moodDao();
         allMoods = moodDao.getAllMoods();
     }
 
