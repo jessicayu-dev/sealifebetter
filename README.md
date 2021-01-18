@@ -1,6 +1,6 @@
 
 # sealifebetter
-Hello - This is our project Sea Life Better a Mental Health Tracking & reccomendation app Targeted at Seafarers and other isolated careers. 
+Hello - This is our project Sea Life Better a Mental Health Tracking & recommendation app Targeted at Seafarers and other isolated careers. 
 
 Our Crew is made up of : 
 Jose Garcia  - UC Riverside - Chemical Engineering
